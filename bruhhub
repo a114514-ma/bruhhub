@@ -171,6 +171,12 @@ Tab:AddButton({
   	end    
 })
 
+
+local Section = Tab:AddSection({
+	Name = "因为upio不准将脚本公开所以复制discord"
+})
+
+
 Tab:AddButton({
 	Name = "blackking中文",
 	Callback = function()
@@ -178,6 +184,14 @@ Tab:AddButton({
 loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()	
   	end    
 })
+
+Tab:AddButton({
+	Name = "硬核模式by munciseek",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Munciseekawa/Sc/refs/heads/main/ScrtptsMode"))()
+  	end    
+})
+
 
 local Tab = Window:MakeTab({
 	Name = "刀刃球",
@@ -206,6 +220,19 @@ Tab:AddButton({
   	end    
 })
 
+Tab:AddButton({
+	Name = "quantumx",
+	Callback = function()
+      	loadstring(game:HttpGet('https://pastebin.com/raw/idKUExya'))()	
+  	end    
+})
+
+Tab:AddButton({
+	Name = "yxusin hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/875d1610705f24635254bd13d6f0c889.lua"))()
+  	end    
+})
 local Tab = Window:MakeTab({
 	Name = "被遗弃",
 	Icon = "rbxassetid://4483345998",
@@ -239,27 +266,126 @@ Tab:AddButton({
   	end    
 })
 
+local Tab = Window:MakeTab({
+	Name = "死铁轨",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
---[[
-Name = <string> - The name of the tab.
+Tab:AddButton({
+	Name = "DBcheatkm",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nasrali11448/FaxvKM/refs/heads/main/DBCheatKM.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "roinx hub",
+	Callback = function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/672a0ae340e8ce7e21a51e37c6bf0cc1.lua"))()
+  	end    
+})
+
+
+
+local Tab = Window:MakeTab({
+	Name = "自然灾害",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab:AddButton({
+	Name = "环绕黑洞",
+	Callback = function()
+loadstring(game:HttpGet("https://pastefy.app/t0djamGi/raw"))()	
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "巴掌模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "通用",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "获得手套",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Donjosx/SBS/refs/heads/main/GlovesAbuser.lua'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "获得手套技能",
+	Callback = function()
+      	loadstring(game:HttpGet("https://rawscripts.net/raw/Slap-Battles-KykyryzoB-Hub-SB-9008"))()	
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "伐木大亨2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "中文脚本",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/LuaWare.lua", true))()
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "内脏与黑火药",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "油管找的",
+	Callback = function()
+        -- Supports mobile servers as well
+loadstring(game:HttpGet('https://api.luarmor.net/files/v3/loaders/4f5c7bbe546251d81e9d3554b109008f.lua'))()
+  	end    
+})
+--[[Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
-local Section = Tab:AddSection({
-	Name = "各种脚本"
-})
 
 --[[
 Name = <string> - The name of the section.
 ]]
 
 OrionLib:MakeNotification({
-	Name = "欢迎使用本脚本😊😊",
+	Name = "欢迎使用bruh中心😊😊",
 	Content = "脚本持续更新",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
+OrionLib:MakeNotification({
+	Name = "缝合脚本",
+	Content = "此脚本为缝合脚本",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+OrionLib:MakeNotification({
+	Name = "作者：bruh",
+	Content = "目前处于测试阶段",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
 
 --[[
 Title = <string> - The title of the notification.
