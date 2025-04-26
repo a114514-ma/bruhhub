@@ -1,0 +1,275 @@
+local player = game.Players.LocalPlayer
+
+local OrionLib = 
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "bruh中心", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+
+local Tab = Window:MakeTab({
+	Name = "通用",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab:AddButton({
+	Name = "飞行",
+	Callback = function()
+      	loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\90\66\122\99\84\109\49\102\34\41\41\40\41\10")()
+end
+})
+
+Tab:AddButton({
+	Name = "穿墙",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScript/main/Noclip"))()	
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "夜视",
+	Callback = function()
+      --just made a loadstring for my discord server, so i not made thi
+--https://discord.gg/7axk7UGS8C
+ 
+ 
+pcall(function()
+	local lighting = game:GetService("Lighting");
+	lighting.Ambient = Color3.fromRGB(255, 255, 255);
+	lighting.Brightness = 1;
+	lighting.FogEnd = 1e10;
+	for i, v in pairs(lighting:GetDescendants()) do
+		if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("SunRaysEffect") then
+			v.Enabled = false;
+		end;
+	end;
+	lighting.Changed:Connect(function()
+		lighting.Ambient = Color3.fromRGB(255, 255, 255);
+		lighting.Brightness = 1;
+		lighting.FogEnd = 1e10;
+	end);
+	spawn(function()
+		local character = game:GetService("Players").LocalPlayer.Character;
+		while wait() do
+			repeat wait() until character ~= nil;
+			if not character.HumanoidRootPart:FindFirstChildWhichIsA("PointLight") then
+				local headlight = Instance.new("PointLight", character.HumanoidRootPart);
+				headlight.Brightness = 1;
+				headlight.Range = 60;
+			end;
+		end;
+	end);
+end)		
+  	end    
+})
+
+Tab:AddButton({
+	Name = "甩人",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()	
+  	end    
+})
+
+Tab:AddButton({
+	Name = "iy指令",
+	Callback = function()
+      	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()	
+  	end    
+})
+
+Tab:AddButton({
+	Name = "铁拳",
+	Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'))()		
+  	end    
+})
+
+Tab:AddButton({
+	Name = "隐身(按E)",
+	Callback = function()
+      loadstring(game:HttpGet('https://pastebin.com/raw/nwGEvkez'))()		
+  	end    
+})
+
+Tab:AddButton({
+	Name = "电脑键盘",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()	
+  	end    
+})
+
+Tab:AddButton({
+	Name = "飞车",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/G3GnBCyC", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "旋转",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/main/%E6%97%8B%E8%BD%AC.lua"))() 		
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "evade",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "最强kinghub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Evade-Evade-The-Best-Free-GUI-Script-lots-of-Features-20718"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "自动挂机活动掉落物",
+	Callback = function()
+      	loadstring(game:HttpGet("https://rawscripts.net/raw/Evade-Roses-Farm-29280"))()	
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "the rake",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "最强the rake",
+	Callback = function()
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/9ccd19089cb4d74bd2ac8902fb910027.lua"))()		
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "doors",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "mspaint discord点击复制",
+	Callback = function()
+      		setclipboard("https://discord.com/invite/mspaint")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "blackking中文",
+	Callback = function()
+      	--[[Doors Blackking And BobHub脚本汉化]]
+loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()	
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "刀刃球",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "最强ffj hub",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallV3.lua"))()	
+  	end    
+})
+
+Tab:AddButton({
+	Name = "lunax hub",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Alexisisback/Lunax/refs/heads/main/Loader.lua"))()	
+  	end    
+})
+
+Tab:AddButton({
+	Name = "frostwere",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Fsploit/Frostware-/refs/heads/main/Bypass.lua"))()	
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "被遗弃",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "最强fartsaken",
+	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ivannetta/ShitScripts/main/forsaken.lua"))()		
+  	end    
+})
+
+Tab:AddButton({
+	Name = "rift",
+	Callback = function()
+      loadstring(game:HttpGet("https://github.com/Synergy-Networks/products/raw/main/Rift/loader.lua"))()		
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "sols rng",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "hoho hub",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()	
+  	end    
+})
+
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "各种脚本"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+OrionLib:MakeNotification({
+	Name = "欢迎使用本脚本😊😊",
+	Content = "脚本持续更新",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
