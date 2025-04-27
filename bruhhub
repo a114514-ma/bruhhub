@@ -299,6 +299,7 @@ Tab:AddButton({
 	Name = "环绕黑洞",
 	Callback = function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Natural-Disaster-Survival-Super-ring-V4-24296"))()
+  	end    
 })
 
 local Tab = Window:MakeTab({
