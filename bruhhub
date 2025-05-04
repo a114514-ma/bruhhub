@@ -1,4 +1,3 @@
-
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
@@ -69,12 +68,6 @@ Tab:AddTextbox({
 		game.Players.LocalPlayer.Character.Humanoid.Health = Value
 	end	 
 })
-Tab:AddButton({
-	Name = "回满血",
-	Callback = function()
-game.Players.LocalPlayer.Character.Humanoid.Health = game.Players.LocalPlayer.Character.Humanoid.MaxHealth 
-end
-})
 Tab:AddTextbox({
 	Name = "重力",
 	Default = "",
@@ -83,6 +76,31 @@ Tab:AddTextbox({
 		game.Workspace.Gravity = Value
 	end
 })
+Tab:AddTextbox({
+        Name = "视界设置（70）",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(v)
+                game.Workspace.CurrentCamera.FieldOfView = v
+        end
+})
+
+Tab:AddTextbox({
+        Name = "高度设置",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(phh)
+                XA.Character.Humanoid.HipHeight = phh
+        end
+})
+
+Tab:AddButton({
+	Name = "回满血",
+	Callback = function()
+game.Players.LocalPlayer.Character.Humanoid.Health = game.Players.LocalPlayer.Character.Humanoid.MaxHealth 
+end
+})
+
 Tab:AddButton({
 	Name = "电脑键盘",
 	Callback = function()
@@ -93,6 +111,12 @@ Tab:AddButton({
 	Name = "跟踪玩家",
 	Callback = function()
       	loadstring(game:HttpGet("https://pastebin.com/raw/F9PNLcXk"))()
+  	end
+})
+Tab:AddButton({
+	Name = "自动wallhop",
+	Callback = function()
+      	loadstring(game:HttpGet( 'https://pastefy.app/EjMM9FkU/raw' ))()
   	end
 })
 Tab:AddButton({
@@ -231,59 +255,7 @@ Tab:AddButton({
       	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()	
   	end    
 })
-Tab:AddTextbox({
-        Name = "跳跃高度设置",
-        Default = "",
-        TextDisappear = true,
-        Callback = function(Value)
-XA.Character.Humanoid.JumpPower = Value
-        end
-})
 
-Tab:AddTextbox({
-        Name = "移动速度设置",
-        Default = "",
-        TextDisappear = true,
-        Callback = function(Value)
-                XA.Character.Humanoid.WalkSpeed = Value
-        end
-})
-
-Tab:AddTextbox({
-        Name = "重力设置",
-        Default = "",
-        TextDisappear = true,
-        Callback = function(Value)
-                game.Workspace.Gravity = Value
-        end
-})
-
-Tab:AddTextbox({
-        Name = "血量设置",
-        Default = "",
-        TextDisappear = true,
-        Callback = function(Value)
-                XA.Character.Humanoid.Health = Value
-        end
-})
-
-Tab:AddTextbox({
-        Name = "视界设置（70）",
-        Default = "",
-        TextDisappear = true,
-        Callback = function(v)
-                game.Workspace.CurrentCamera.FieldOfView = v
-        end
-})
-
-Tab:AddTextbox({
-        Name = "高度设置",
-        Default = "",
-        TextDisappear = true,
-        Callback = function(phh)
-                XA.Character.Humanoid.HipHeight = phh
-        end
-})
 
 Tab:AddButton({
         Name = "北京时间",
