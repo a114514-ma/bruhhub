@@ -497,7 +497,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "最强the rake",
 	Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/Wayfer0/Roblox-Scripts/refs/heads/main/Wayfer%20Hub"))()
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/9ccd19089cb4d74bd2ac8902fb910027.lua"))()		
   	end    
 })
 
