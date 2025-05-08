@@ -13,8 +13,46 @@ print("反挂机开启")
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/qz5Vsxuk'))();
+OrionLib:MakeNotification({
+	Name = "欢迎使用本脚本😊😊",
+	Content = "脚本持续更新",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+
+OrionLib:MakeNotification({
+	Name = "作者：bruh",
+	Content = "目前处于测试阶段",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
 
 local Window = OrionLib:MakeWindow({Name = "bruh中心", HidePremium = false, SaveConfig = true,IntroText = "bruh中心", ConfigFolder = "傻福。。。"})
+
+local about = Window:MakeTab({
+    Name = "公告",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+about:AddParagraph("添加R&D脚本")
+about:AddParagraph("添加压力脚本")
+about:AddParagraph("替换the rake被删除脚本")
+about:AddParagraph("估计会在未来更换ui")
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+
 local about = Window:MakeTab({
     Name = "信息",
     Icon = "rbxassetid://4483345998",
@@ -495,11 +533,12 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "最强the rake",
+	Name = "最强the rake(要卡密)",
 	Callback = function()
-      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/9ccd19089cb4d74bd2ac8902fb910027.lua"))()		
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Wayfer0/Roblox-Scripts/refs/heads/main/Wayfer%20Hub"))()
   	end    
 })
+
 
 local Tab = Window:MakeTab({
 	Name = "doors",
@@ -850,7 +889,40 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/weishanteam/Script/main/doors/WeiShan_Loader.lua"))()
 end
 })
-
+local Tab = Window:MakeTab({
+	Name = "Rooms&Doors",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "情云R&D",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/ChinaQY/Scripts/Main/Rooms%20%26%20Doors"))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "压力",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "creepy eye hub",
+	Callback = function()
+      	loadstring(game:HttpGet("https://github.com/Drop56796/CreepyEyeHub/blob/main/obfuscate.lua?raw=true"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Fire hub(别开自动通关会被踢)",
+	Callback = function()
+      	loadstring(game:HttpGet("https://rawscripts.net/raw/Pressure-Fire-Hub-22252"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "情云压力",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/ChinaQY/Scripts/Main/Pressure"))()
+  	end    
+})
 
 local Tab = Window:MakeTab({
 	Name = "刀刃球",
@@ -859,7 +931,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "最强ffj hub(曾经的神)",
+	Name = "最强ffj hub",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallV3.lua"))()	
   	end    
@@ -1157,6 +1229,7 @@ for _, Cutscene in Client.CutsceneHandler.Cutscenes:GetChildren() do
 end
           end
 })
+
 local Tab = Window:MakeTab({
         Name = "监狱人生",
         Icon = "rbxassetid://6087485864",
@@ -3735,20 +3808,6 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 Name = <string> - The name of the section.
 ]]
 
-OrionLib:MakeNotification({
-	Name = "欢迎使用本脚本😊😊",
-	Content = "脚本持续更新",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
-
-OrionLib:MakeNotification({
-	Name = "作者：bruh",
-	Content = "目前处于测试阶段",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
 
 
 --[[
