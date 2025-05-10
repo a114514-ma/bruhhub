@@ -547,16 +547,14 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-	Name = "mspaint discord点击复制",
+	Name = "mspaintv4",
 	Callback = function()
-      		setclipboard("https://discord.com/invite/mspaint")
+      		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/002c19202c9946e6047b0c6e0ad51f84.lua"))()
   	end    
 })
 
 
-local Section = Tab:AddSection({
-	Name = "因为upio不准将脚本公开所以复制discord"
-})
+
 
 
 Tab:AddButton({
@@ -895,9 +893,9 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddButton({
-	Name = "情云R&D",
+	Name = "mspaintv4",
 	Callback = function()
-      	loadstring(game:HttpGet("https://raw.githubusercontent.com/ChinaQY/Scripts/Main/Rooms%20%26%20Doors"))()
+      	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/002c19202c9946e6047b0c6e0ad51f84.lua"))()
   	end    
 })
 local Tab = Window:MakeTab({
